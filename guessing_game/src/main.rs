@@ -19,7 +19,7 @@ fn main() {
 
         let guess : u32 = match guess.trim().parse(){
             Ok(num) => num,
-            Err(_) => println!("enter a nb"),
+            Err(_) => {println!("un nb ma vie");continue;}
         };
 
         match guess.cmp(&secret_number) {
@@ -30,7 +30,7 @@ fn main() {
         }
 
         println!("You guessed: {}", guess);
-        println!("You s_nb : {}", secret_number);   
+        //println!("You s_nb : {}", secret_number);   
     }
 
 
